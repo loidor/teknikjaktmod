@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+	<meta content="text/html; charset=utf-8" http-equiv="content-type">
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+	<meta content="" name="description">
+	<meta content="" name="author">
+	<title>Teknikjakten</title><!-- Bootstrap core CSS -->
+	<link href="bootstrap.min.css" rel="stylesheet"><!-- Custom fonts for this template -->
+	<link href="all.min.css" rel="stylesheet" type="text/css">
+	<link href="css.css" rel="stylesheet" type="text/css">
+	<link href="css_004.css" rel="stylesheet" type="text/css">
+	<link href="css_003.css" rel="stylesheet" type="text/css">
+	<link href="css_002.css" rel="stylesheet" type="text/css"><!-- Custom styles for this template -->
+	<link href="agency.min.css" rel="stylesheet"><!--User stylesheet-->
+	<link href="style.css" rel="stylesheet">
+	<script>
+
+	 function validateForm() {
+	   var x = document.forms["contactForm"]["answer"].value;
+	   x = x.toUpperCase();
+	   if (x == "ESRANGE" || x == "RYMDBASEN ESRANGE") {
+	       return true;
+	   }else{
+	     document.getElementById("answer").value ="";
+	     document.getElementById("answer").setAttribute("placeholder","Det var tyvärr fel svar, försök igen!");
+	     return false;
+	   }
+	 }
+
+	</script>
+</head>
+<body id="page-top">
+	<!-- Navigation -->
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+		<div class="container">
+			<a class="navbar-brand js-scroll-trigger" href="#page-top">Teknikjakten från Digidelnätverket</a> <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right collapsed" data-target="#navbarResponsive" data-toggle="collapse" type="button">Menu <i class="fas fa-bars"></i></button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav text-uppercase ml-auto">
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="https://digidel.se/teknikjakten/anvanda.html">Förberedelser</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link js-scroll-trigger" href="https://digidel.se/teknikjakten/omoss.html">Om Teknikjakten</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav><!-- Header -->
+	<header class="masthead">
+		<div class="container">
+			<div class="intro-text">
+				<div class="intro-heading text-uppercase">
+					Teknikjakten!
+				</div>
+				<div class="intro-lead-in">
+					Kan du lösa mysteriet?
+				</div><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Starta jakten!</a>
+			</div>
+		</div>
+	</header><!-- Part 1 -->
+	<section id="services">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="section-heading text-uppercase">Jakten startar</h2>
+					<h3 class="section-subheading">Du får ett mystiskt SMS...</h3>
+					<h3 class="section-imgtext">Skärmavbild av meddelande</h3><img src="fakeSMS.png"><br>
+					<br>
+					<div class="uppgift-box">
+						<h3>Uppgift 1</h3>
+						<p>Vem tillhör detta nummer?</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- Contact -->
+	<section id="contact">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12 text-center">
+					<h2 class="section-heading text-uppercase">Svar</h2>
+					<h3 class="section-subheading text-muted">Skriv ditt svar.</h3>
+				</div>
+			</div><!--Ledtråd-->
+			<div class="col-lg-12 text-center">
+				<h3 class="section-heading text-uppercase">Behöver du en ledtråd?</h3>
+				<p>
+                    <a aria-controls="ledtrad" aria-expanded="false" class="btn btn-primary" data-toggle="collapse" href="#ledtrad" role="button">Ledtråd 1</a>
+                    <a aria-controls="collapseExample" aria-expanded="false" class="btn btn-primary" data-toggle="collapse" href="#ledtrad2" role="button">Ledtråd 2</a>
+                    <a aria-controls="ledtrad3" aria-expanded="false" class="btn btn-primary" data-toggle="collapse" href="#ledtrad3" role="button">Ledtråd 3</a>
+                </p>
+				<div class="collapse" id="ledtrad">
+					<div class="card card-body section-subheading text-muted">
+						Ledtråd 1: Lösenordet är något du behöver som superhjälte.
+					</div>
+				</div>
+				<div class="collapse" id="ledtrad2">
+					<div class="card card-body section-subheading text-muted">
+						Ledtråd 2: Lösenordet är motsatsen till svaghet.
+					</div>
+				</div>
+				<div class="collapse" id="ledtrad3">
+					<div class="card card-body section-subheading text-muted">
+						Ledtråd 3: Lösenordet rimmar på saft.
+					</div>
+				</div><!--Slut ledtråd-->
+				<div class="row">
+					<div class="col-lg-12">
+						<form action="./2.html" autocomplete="off" id="contactForm" name="sentMessage" novalidate="novalidate" onsubmit="return validateForm()">
+							&gt;
+							<div class="row">
+								<div class="col-md-12">
+									<div class="form-group">
+										<input class="form-control" data-validation-required-message="Rutan får inte vara tom" id="answer" placeholder="Skriv ditt svar här" required="required" type="text" value="esrange">
+										<p class="help-block text-danger"></p>
+									</div>
+									<div class="col-lg-12 text-center">
+										<div id="success"></div><button class="btn btn-primary btn-xl text-uppercase" id="sendMessageButton" type="submit">Skicka ditt svar</button>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- Footer -->
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<span class="copyright"><a href="https://www.digidel.se/" style="font-weight: bold"><img class="footer-img" src="Teknikjakten_files/logo_digidel.png"></a></span>
+				</div>
+			</div>
+		</div>
+	</footer><!-- Bootstrap core JavaScript -->
+	<script src="Teknikjakten_files/jquery.min.js">
+	</script> 
+	<script src="Teknikjakten_files/bootstrap.bundle.min.js">
+	</script> <!-- Plugin JavaScript -->
+	 
+	<script src="Teknikjakten_files/jquery.easing.min.js">
+	</script> <!-- Contact form JavaScript 
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+    -->
+	 <!-- Custom scripts for this template -->
+	 
+	<script src="Teknikjakten_files/agency.min.js">
+	</script> 
+	<script src="Teknikjakten_files/agency.min.js">
+	</script>
+</body>
+</html>
