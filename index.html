@@ -1,3 +1,68 @@
+<!--
+OM TEKNIKJAKTEN
+==========================================================
+Teknikjakten är inspirerad av escape rooms och skapades som en del 
+av projektet Mer för fler som Umeå kommuns bibliotek deltog i 2018. 
+Projektgruppen bestod av sex personer från olika bibliotek som gick 
+en metodutbildning, SKL:s Innovationsguiden.
+
+Du kan hitta mer information om detta projekt på följande plats
+
+www.minabibliotek.se/merforfler
+
+SKAPA EGNA JAKTER
+==========================================================
+Denna version av teknikjakten är en mall framtagen för att det skall vara
+enkelt att skapa egna teknikjakter.
+kunna skapa egna "teknikjakter".
+
+Ett exempel på teknikjakt kan hittas på:
+
+www.itbib.se/teknikjakten
+
+LICENS OCH MALL
+==========================================================
+Teknikjakten är byggd med hjälp av ett javascript ramverk som heter 
+Twitter bootstrap och en tema som heter Agency.
+Temat kan hittas på följande sida.
+
+https://startbootstrap.com/themes/agency/
+
+Eller här:
+
+https://github.com/BlackrockDigital/startbootstrap-agency
+
+Mallen Agency använder sig av en licens som heter "The MIT License".
+Det innebär följande
+
+The MIT License (MIT)
+
+Copyright (c) 2013-2019 Blackrock Digital LLC
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+SLUT PÅ KOMMENTARER
+==========================================================
+-->
+<!--SÅ GÖR DU För att skapa en egen teknikjakt behöver du ändra vissa delar i detta dokument
+sådana platser är märkta med texten ÄNDRA. Läs kommentarerna eller använd sökfunktionen
+ctrl+f för att snabbt hitta de platser du behöver ändra på.-->
 <!DOCTYPE html>
 <html lang="sv">
 <head>
@@ -5,34 +70,29 @@
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
 	<meta content="" name="description">
-	<meta content="" name="author">
-	<title>Teknikjakten</title><!-- Bootstrap core CSS -->
-	<link href="bootstrap.min.css" rel="stylesheet"><!-- Custom fonts for this template -->
+	<meta content="" name="author"><!--
+  # Genom att ändra denna informationen nedan kan du ge jakten ett eget namn
+  # EX: <title>Ett helt eget namn</title>
+  # Informationen visas inte någonstans på webbsidan utan ändrar det namn som 
+  # webbsidans flik/tabb har då du du surfar till sidan.
+  # 
+  -->
+	<title>Teknikjakten</title><!--Filer som berättar hur sidan skall se ut laddas in. Här behöver vi inte ändra något-->
+	<link href="bootstrap.min.css" rel="stylesheet">
 	<link href="all.min.css" rel="stylesheet" type="text/css">
 	<link href="css.css" rel="stylesheet" type="text/css">
 	<link href="css_004.css" rel="stylesheet" type="text/css">
 	<link href="css_003.css" rel="stylesheet" type="text/css">
 	<link href="css_002.css" rel="stylesheet" type="text/css"><!-- Custom styles for this template -->
-	<link href="agency.min.css" rel="stylesheet"><!--User stylesheet-->
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+	<link href="agency.min.css" rel="stylesheet">
 	<link href="style.css" rel="stylesheet">
-	<script>
-
-	 function validateForm() {
-	   var x = document.forms["contactForm"]["answer"].value;
-	   x = x.toUpperCase();
-	   if (x == "ESRANGE" || x == "RYMDBASEN ESRANGE") {
-	       return true;
-	   }else{
-	     document.getElementById("answer").value ="";
-	     document.getElementById("answer").setAttribute("placeholder","Det var tyvärr fel svar, försök igen!");
-	     return false;
-	   }
-	 }
-
-	</script>
 </head>
 <body id="page-top">
-	<!-- Navigation -->
+	<!-- Denna del av koden berättar vad menyn skall innehålla -->
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
 		<div class="container">
 			<a class="navbar-brand js-scroll-trigger" href="#page-top">Teknikjakten från Digidelnätverket</a> <button aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right collapsed" data-target="#navbarResponsive" data-toggle="collapse" type="button">Menu <i class="fas fa-bars"></i></button>
@@ -47,26 +107,36 @@
 				</ul>
 			</div>
 		</div>
-	</nav><!-- Header -->
+	</nav><!--SLUT PÅ DELEN SOM BESKRIVER MENYN LÄNGST UPP-->
+	<!--FÖRSTA DELEN SOM INTRODUCERAR JAKTEN STARTAR-->
 	<header class="masthead">
 		<div class="container">
 			<div class="intro-text">
 				<div class="intro-heading text-uppercase">
-					Teknikjakten!
+					ÄNDRA: Teknikjakten
 				</div>
 				<div class="intro-lead-in">
-					Kan du lösa mysteriet?
+					ÄNDRA: lägg till underitel om du vill
 				</div><a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Starta jakten!</a>
 			</div>
 		</div>
-	</header><!-- Part 1 -->
+	</header><!-- DELEN SOM BESKRIVER FÖRSTA UPPDRAGET STARTAR -->
 	<section id="services">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
-					<h2 class="section-heading text-uppercase">Jakten startar</h2>
-					<h3 class="section-subheading">Du får ett mystiskt SMS...</h3>
-					<h3 class="section-imgtext">Skärmavbild av meddelande</h3><img src="fakeSMS.png"><br>
+					<h2 class="section-heading text-uppercase">ÄNDRA:Jakten startar</h2>
+					<h3 class="section-subheading">ÄNDRA: undertitel?</h3>
+					<h3>ÄNDRA: Bakgrundsinformation</h3>
+					<!--Ibland kanske du vill lägga till en bild i beskrivningen.
+					I så fall läger du in bilden i katalogen img.
+					Du lägger sedan in följande kod för att berätta att en bild skall visas.
+					Men ersätter bildensnamn med det namn din bild och det filformat din bild har.
+
+					EX:
+					<img src="./img/bildensnamn.filformat">
+					T.ex: <img src="./img/coolbild.jpeg"> -->
+					<p>ÄNDRA: Bakgrundsinformation här</p><br>
 					<br>
 					<div class="uppgift-box">
 						<h3>Uppgift 1</h3>
@@ -75,45 +145,35 @@
 				</div>
 			</div>
 		</div>
-	</section><!-- Contact -->
+	</section><!-- DELEN DÄR MAN MATAR IN SITT SVAR STARTAR -->
+	<!--Du behöver här berätta vilken sida som skall laddas om man löser uppdraget.
+      Just nu är det sidan som heter 2.html som skall laddas.
+      Om vi istället skulle arbeta med uppdrag 2 just så och ändra i filen 2.html skulle vi då alltså
+      istället låta det stå "./3.html" eftersom det då är den sidan som borde laddas.
+
+      Vi kan fortsätta på detta viset och lägga till nya sidor tills dess att vi skapat
+      så många uppdrag vi vill.
+      -->
+						
+					</div>
+				</div>
+			</div>
+		</section>
 	<section id="contact">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
 					<h2 class="section-heading text-uppercase">Svar</h2>
-					<h3 class="section-subheading text-muted">Skriv ditt svar.</h3>
+					<h3 class="section-subheading text-muted">Svara på frågan för att ta dig vidare.</h3>
 				</div>
-			</div><!--Ledtråd-->
-			<div class="col-lg-12 text-center">
-				<h3 class="section-heading text-uppercase">Behöver du en ledtråd?</h3>
-				<p>
-                    <a aria-controls="ledtrad" aria-expanded="false" class="btn btn-primary" data-toggle="collapse" href="#ledtrad" role="button">Ledtråd 1</a>
-                    <a aria-controls="collapseExample" aria-expanded="false" class="btn btn-primary" data-toggle="collapse" href="#ledtrad2" role="button">Ledtråd 2</a>
-                    <a aria-controls="ledtrad3" aria-expanded="false" class="btn btn-primary" data-toggle="collapse" href="#ledtrad3" role="button">Ledtråd 3</a>
-                </p>
-				<div class="collapse" id="ledtrad">
-					<div class="card card-body section-subheading text-muted">
-						Ledtråd 1: Lösenordet är något du behöver som superhjälte.
-					</div>
-				</div>
-				<div class="collapse" id="ledtrad2">
-					<div class="card card-body section-subheading text-muted">
-						Ledtråd 2: Lösenordet är motsatsen till svaghet.
-					</div>
-				</div>
-				<div class="collapse" id="ledtrad3">
-					<div class="card card-body section-subheading text-muted">
-						Ledtråd 3: Lösenordet rimmar på saft.
-					</div>
-				</div><!--Slut ledtråd-->
+			</div>
 				<div class="row">
 					<div class="col-lg-12">
 						<form action="./2.html" autocomplete="off" id="contactForm" name="sentMessage" novalidate="novalidate" onsubmit="return validateForm()">
-							&gt;
 							<div class="row">
 								<div class="col-md-12">
 									<div class="form-group">
-										<input class="form-control" data-validation-required-message="Rutan får inte vara tom" id="answer" placeholder="Skriv ditt svar här" required="required" type="text" value="esrange">
+										<input class="form-control" data-validation-required-message="Rutan får inte vara tom" id="answer" placeholder="Skriv ditt svar här" required="required" type="text">
 										<p class="help-block text-danger"></p>
 									</div>
 									<div class="col-lg-12 text-center">
@@ -124,33 +184,100 @@
 						</form>
 					</div>
 				</div>
+				<!--Ledtråd-->
+				<br/>
+				<br/>
+			<div class="col-lg-12 text-center">
+				<h3 class="section-heading text-uppercase">Behöver du en ledtråd?</h3>
+				<p><a aria-controls="ledtrad" aria-expanded="false" class="btn btn-primary" data-toggle="collapse" href="#ledtrad" role="button">Ledtråd 1</a> <a aria-controls="collapseExample" aria-expanded="false" class="btn btn-primary" data-toggle="collapse" href="#ledtrad2" role="button">Ledtråd 2</a> <a aria-controls="ledtrad3" aria-expanded="false" class="btn btn-primary" data-toggle="collapse" href="#ledtrad3" role="button">Ledtråd 3</a></p>
+				<div class="collapse" id="ledtrad">
+					<div class="section-subheading text-muted">
+						<h3>Ledtråd 1: Lösenordet är något du behöver som superhjälte. ÄNDRA</h3>
+					</div>
+				</div>
+				<div class="collapse" id="ledtrad2">
+					<div class="section-subheading text-muted">
+						<h3>Ledtråd 2: Lösenordet är motsatsen till svaghet. ÄNDRA</h3>
+					</div>
+				</div>
+				<div class="collapse" id="ledtrad3">
+					<div class="section-subheading text-muted">
+						<h3>Ledtråd 3: Lösenordet rimmar på saft. ÄNDRA</h3>
+					</div>
+				</div><!--Slut ledtråd-->
 			</div>
 		</div>
-	</section><!-- Footer -->
-	<footer>
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<span class="copyright"><a href="https://www.digidel.se/" style="font-weight: bold"><img class="footer-img" src="Teknikjakten_files/logo_digidel.png"></a></span>
+	</section>
+						<!-- DENNA DEL BESKRIVER INFORMATIONEN SOM VISAS LÄNGST NER PÅ SIDAN -->
+						<!-- ÄNDRA webbadress och länktext -->
+		<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<span class="copyright"><a href="http://www.umea.se/umeakommun/kulturochfritid/bibliotek.4.4ad27aa912e4d856fb180001056.html" style="font-weight: bold">Folkbiblioteken i Umeå kommun: ÄNDRA</a></span>
+					</div>
 				</div>
 			</div>
-		</div>
-	</footer><!-- Bootstrap core JavaScript -->
-	<script src="Teknikjakten_files/jquery.min.js">
-	</script> 
-	<script src="Teknikjakten_files/bootstrap.bundle.min.js">
-	</script> <!-- Plugin JavaScript -->
-	 
-	<script src="Teknikjakten_files/jquery.easing.min.js">
-	</script> <!-- Contact form JavaScript 
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
-    -->
-	 <!-- Custom scripts for this template -->
-	 
-	<script src="Teknikjakten_files/agency.min.js">
-	</script> 
-	<script src="Teknikjakten_files/agency.min.js">
-	</script>
+		</footer><!-- Filer som denna mall använder läses in, du behöver inte ändra något här.-->
+		<script src="jquery.min.js">
+		</script> 
+		<script src="bootstrap.bundle.min.js">
+		</script> 
+		<script src="jquery.easing.min.js">
+		</script> 
+		<script src="agency.min.js">
+		</script> 
+		<script src="agency.min.js">
+		</script> <!--I DENNA DEL BERÄTTAR DU VAD SOM ÄR RÄTT SVAR-->
+		 
+		<script>
+		  function validateForm() {
+
+		    //Det använder skriver i rutan hämtas in och sparas i en variabel som heter answer.
+		    //det man skrivit in i rutan konverteras automatiskt till gemener.
+		    //Skriver någon in MeDDelande och då använder versaler kommer texten som sparas att ändå att bli meddelande.
+		    //Det gör det lättare att berätta vilket alteranativ som är rätt eftersom
+		    //vi inte behöver ta hänsyn till gemenser/versaler.
+		    var answer = document.forms["contactForm"]["answer"].value.toLowerCase();
+		    
+		    /*Genom att ändra det som står mellan dessa tecken "" kan du välja vad som är rätt svar 
+		    Viktigt! Skriv svaret med små bokstäver.
+
+		    EX: if (answer == "mittsvar")
+
+		    Om man nu skriver in mittsvar i rutan kommer man vidare.
+		    
+		    Finns det fler än ett rätt svar? 
+
+		    Genom att lägga till följande tecken || (markera texten och kopiera 
+		    eller tryck alt-gr samtidigt som du trycker på tangenten till höger om shift)
+		    så kan du lägga till fler alternativ som är rätt.
+
+		    EX: Med två räta svar
+
+		    if (answer == "svar1" || answer == "svar2" )
+		    
+		    EX: Med tre rätta svar
+
+		    if (answer == "svar1" || answer == "svar2" answer == "svar3" )
+		    */
+
+		    if (answer == "fredag") { /*Kom ihåg att svaret skall skrivas med gemener*/
+		        return true;
+		    }else{
+		      document.getElementById("answer").value ="";
+		      document.getElementById("answer").setAttribute("placeholder","Det var tyvärr fel svar, försök igen!");
+		      return false;
+		    }
+		  }
+		</script> <!--GRATTIS! Du har nu gjort startsidan för din egen teknikjakt! Testa att dubbelklicka på denna fil
+  index.html för att visa sidan i din webbläsare. Fungerar inte  det kan du högerklicka på filen och välja öppna med. Där borde du kunna hitta någon webbläsare som alternativ
+
+  EX: Internet Explorer, Edge, Firefox, Chrome
+
+  Det är nu dags att öppna sidan som heter 2.html och följa instruktionerna där.
+  -->
+		 
+	</div>
 </body>
 </html>
